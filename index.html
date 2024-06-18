@@ -5,32 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>부산아가씨의 맛집 리스트</title>
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />  
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 </head>
 <body>
     <div class="wrap">
         <div class="group head">
-            <h2 class="h2">부산 아가씨의 <br> 단골 모음집</h2>
-            <h3 class="h3">자주 가던 집만 엄선해서 소개해드리는<br>부산 아가씨의 맛집 리스트!<br>부산을 여행하실 때 도움이 되셨으면 좋겠습니다.<br>즐거운 시간 보내세요~!</h3>
-            <ul class="head--list">
-                <li>카페</li>
-                <li>음식점</li>
-                <li>그 외</li>
+            <h2 class="h2" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic"  data-aos-duration="800" >부산 아가씨의 <br> 단골 모음집</h2>
+            <h3 class="h3" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic"  data-aos-duration="800" data-aos-delay="800">자주 가던 집만 엄선해서 소개해드리는<br>부산 아가씨의 맛집 리스트!<br>부산을 여행하실 때 도움이 되셨으면 좋겠습니다.<br>즐거운 시간 보내세요~!</h3>
+            <ul class="head--list" data-aos="fade-right" data-aos-offset="5" data-aos-easing="ease-out-cubic"  data-aos-duration="800" data-aos-delay="1400">
+                <li data-aos="fade-up" data-aos-offset="5" data-aos-easing="ease-out-cubic"  data-aos-duration="800" data-aos-delay="1700">카페</li>
+                <li data-aos="fade-up" data-aos-offset="5" data-aos-easing="ease-out-cubic"  data-aos-duration="800" data-aos-delay="1800">음식점</li>
+                <li data-aos="fade-up" data-aos-offset="5" data-aos-easing="ease-out-cubic"  data-aos-duration="800" data-aos-delay="1900">그 외</li>
             </ul>
         </div>
         <div class="group map">
-            <img src="./images/img_map.png" alt="부산지도">
+            <img src="./images/img_map.png" alt="부산지도" data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-out-cubic"  data-aos-duration="800">
         </div>
         <div class="group body">
-            <p class="body--title">MENU</p>
+            <p class="body--title" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic"  data-aos-duration="800">MENU</p>
             
             <!-- <div class="menu-list">
             </div> -->
             <div class="store">
-                <div class="store__group row">
+                <div class="store__group row" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic"  data-aos-duration="800">
                     <div class="store--local">Nampo</div>
                     <ul class="store__list row">
-                        <li class="store__list--item">
+                        <li class="store__list--item" >
                             <span class="store__list--num">A</span>
                             <div class="row store__list--name">
                                 <p class="title">깡돼후</p>
@@ -60,7 +62,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="store__group row">
+                <div class="store__group row" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic"  data-aos-duration="800">
                     <div class="store--local">Gwangan</div>
                     <ul class="store__list row">
                         <li class="store__list--item">
@@ -93,7 +95,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="store__group row mul-item">
+                <div class="store__group row mul-item" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic"  data-aos-duration="800">
                     <div class="store--local">Haeundae</div>
                     <ul class="store__list row">
                         <li class="store__list--item">
@@ -140,7 +142,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="store__group row sig-item">
+                <div class="store__group row sig-item" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic"  data-aos-duration="800">
                     <div class="store--local">Cheongsa</div>
                     <ul class="store__list row">
                         <li class="store__list--item">
@@ -159,7 +161,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="store__group row sig-item">
+                <div class="store__group row sig-item" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic"  data-aos-duration="800">
                     <div class="store--local">Other</div>
                     <ul class="store__list row">
                         <li class="store__list--item">
@@ -193,6 +195,10 @@
                 </span>
         </a>
     </div>
+    <!-- AOS 스크립트 시작 -->
+    <script> 
+        AOS.init(); 
+    </script>
     <script>
         const target = document.querySelector('.map');
         const dim = document.querySelector('.dim');

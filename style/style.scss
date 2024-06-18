@@ -262,6 +262,15 @@ body {
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: top;
+        animation: updown 1.3s linear infinite;
+    }
+    @keyframes updown {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(8px);
+        }
     }
 }
 .h3 {
@@ -284,7 +293,15 @@ body {
     & .icon {
         font-size: 20px;
         vertical-align: middle;
-     
+        animation: bounce 1.2s linear infinite;
+    }
+    @keyframes bounce {
+        0%, 100% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(4px);
+        }
     }
     
 }
@@ -389,7 +406,7 @@ body {
     }
     &--txt {
         position: fixed;
-        top: 50vh;
+        top: 40vh;
         left: 50vw;
         transform: translate(-50%,-50%);
         z-index: 1001;
